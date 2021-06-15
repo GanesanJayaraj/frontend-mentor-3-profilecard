@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body .bg-images {
+  height: 100vh;
+  width: 100vw;
+  z-index: 111;
+  overflow: hidden;
+  position: relative;
+}
+
+body .bg-images img {
+  width: 100%;
+}
+
+body .bg-images .bg-top {
+  position: absolute;
+  -webkit-transform: translate(-45%, -60%);
+          transform: translate(-45%, -60%);
+}
+
+body .bg-images .bg-bottom {
+  position: absolute;
+  -webkit-transform: translate(30%, 25%);
+          transform: translate(30%, 25%);
+}
+
+body main {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  place-items: center;
+  margin-top: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+body main section {
+  z-index: 1112;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 20px 0px #4e4e4e;
+          box-shadow: 0px 0px 20px 0px #4e4e4e;
+}
+
+body main section .top-img {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body main section .top-img .profile-pic {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  height: 100px;
+}
+
+body main section .top-img .profile-pic img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 1px;
+  border: 6px solid white;
+}
+
+body main section .bottom-part {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+body main section .bottom-part .name-country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  color: #2d3248;
+}
+
+body main section .bottom-part .name-country h3 {
+  font-size: 16px;
+}
+
+body main section .bottom-part .name-country span {
+  color: #969696;
+  font-weight: lighter;
+}
+
+body main section .bottom-part .name-country p {
+  font-size: 14px;
+  margin: 16px 0;
+  color: #6a6f81;
+}
+
+body main section .bottom-part .name-country .hr {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+body main section .bottom-part .count-cap {
+  width: 100%;
+  color: #2d3248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section .bottom-part .count-cap h2 {
+  font-size: 16px;
+}
+
+body main section .bottom-part .count-cap .captions {
+  margin: 10px;
+  font-size: 14px;
+  color: #969696;
+}
+
+@media screen and (max-width: 1439px) {
+  body .bg-images .bg-bottom {
+    -webkit-transform: translate(40%, 30%);
+            transform: translate(40%, 30%);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body .bg-images .bg-bottom {
+    -webkit-transform: translate(40%, 45%);
+            transform: translate(40%, 45%);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  body .bg-images .bg-bottom {
+    -webkit-transform: translate(40%, 60%);
+            transform: translate(40%, 60%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body .bg-images .bg-bottom {
+    -webkit-transform: translate(40%, 100%);
+            transform: translate(40%, 100%);
+  }
+  body main section .top-img .profile-pic {
+    /* -webkit-transform: translateY(-50%); */
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body .bg-images .bg-bottom {
+    -webkit-transform: translate(40%, 100%);
+            transform: translate(40%, 100%);
+  }
+  body main {
+    padding: 20px;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main section .top-img .profile-pic {
+    /* -webkit-transform: translateY(-50%); */
+    -webkit-transform: translate(-30%, -50%);
+            transform: translate(-30%, -50%);
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
